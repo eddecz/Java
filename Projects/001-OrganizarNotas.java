@@ -1,3 +1,4 @@
+/*Programa que me dá a media das minhas notas, uma classificação e quantos pontos faltam*/
 class Main {
   public static void main(String[] args) {
 
