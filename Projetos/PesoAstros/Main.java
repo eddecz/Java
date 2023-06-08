@@ -1,18 +1,40 @@
-//Calcular peso em astros do espaço
+/*  
+  O número será dividido pela gravidade da terra, depois multiplicado 
+  pela força gravitacional do astro escolhido (Lua) e será imprimido na tela
+  com as casas decimais simplificadas 
+*/
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Main {
     public static void main(String[] args) {
     float peso;
-    Scanner leia = new Scanner(System.in); float peso1;
+    Scanner leia = new Scanner(System.in);
+    DecimalFormat formatador = new DecimalFormat();
 
     System.out.print("Digite o seu peso: ");
-    peso1 = leia.nextFloat();
+    peso = leia.nextFloat();
 
     System.out.println("===========================================");
-    System.out.print("Seu peso na Lua é: " + (peso1/9.81) * 1.622);
+    System.out.println("Seu peso na Lua seria: " + formatador.format((peso/9.807) * 1.622) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso no Sol seria: " + formatador.format((peso/9.807) * 274) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso em Mercúrio seria: " + formatador.format((peso/9.807) * 3.7) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso em Vênus seria: " + formatador.format((peso/9.807) * 8.87) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso em Marte seria: " + formatador.format((peso/9.807) * 3.71) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso em Júpiter seria: " + formatador.format((peso/9.807) * 24.79) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso em Saturno seria: " + formatador.format((peso/9.807) * 10.44) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso em Urano seria: " + formatador.format((peso/9.807) * 8.87) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso em Netuno seria: " + formatador.format((peso/9.807) * 11.15) + "Kg");
+    System.out.println("------------------------------------");
+    System.out.println("Seu peso em Plutão seria: " + formatador.format((peso/9.807) * 0.62) + "Kg");
     System.out.println("===========================================");
-    
-
     }
 }
