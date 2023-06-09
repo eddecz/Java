@@ -1,8 +1,3 @@
-/*  
-  O número será dividido pela gravidade da terra, depois multiplicado 
-  pela força gravitacional do astro escolhido (Lua) e será imprimido na tela
-  com as casas decimais simplificadas 
-*/
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
